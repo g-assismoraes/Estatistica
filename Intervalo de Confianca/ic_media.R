@@ -13,4 +13,4 @@ epsilon = (sd(dados)/sqrt(length(dados)))*qt(parametro,length(dados)-1)
 intervalo = c(media-epsilon,media+epsilon)
 
 #calculando diretamente
-intervalo2 = t.test(dados,conf.level = 0.95)$conf.int
+intervalo2 = t.test(dados,conf.level = ic)$conf.int
